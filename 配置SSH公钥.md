@@ -22,3 +22,10 @@
 
 
 ## SSH Keys配置
+#### 1.检查电脑上是否有SSH key
+ `～/.ssh 或者 ～/.ssh ls`
+ 上面这行代码的作用是查看电脑上有没有.ssh文件夹
+ - 如果有：会显示bash:/C/Users/.../.ssh:Is a directory
+ - 如果没有：会显示bash:/C/Users/.../.ssh:No such file or directory
+ 
+ 
