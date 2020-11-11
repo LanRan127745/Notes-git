@@ -78,9 +78,7 @@ $ ssh -keygen -t rsa -c "个人邮箱"
 
 ##### 然后就会收到建立成功的邮件
 
-
-
-
+<br>
 
 ### 4.测试SSH Key
 
@@ -92,13 +90,13 @@ $ssh -T git@github.com
 
 接下来会提示是否继续连接，输入yes回车
 
-
+<br>
 
 接下来会提示输入密码，如果上边设置ssh的时候，没有设置密码会提示：
 
 **Warning: Permanently added ‘github.com,192.30.255.112’ (RSA) to the list of known hosts.**
 
-
+<br>
 
 警告完了，如果你能看到如下提示，那你已经成功设置SSH密钥。
 
