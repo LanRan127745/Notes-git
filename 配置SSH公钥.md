@@ -21,11 +21,48 @@
 
 
 
-## SSH Keys配置
-#### 1.检查电脑上是否有SSH key
- `～/.ssh 或者 ～/.ssh ls`
- 上面这行代码的作用是查看电脑上有没有.ssh文件夹
- - 如果有：会显示bash:/C/Users/.../.ssh:Is a directory
- - 如果没有：会显示bash:/C/Users/.../.ssh:No such file or directory
- 
- 
+<<<<<<< HEAD
+#### **这两种方式的主要区别在于**：
+
+- https url：复制https url然后到git Bash里面直接用clone命令克隆到本地就好了，但是每次fetch和push代码都需要输入账号和密码；
+
+- SSH url：需要在只用之前先配置和添加好SSH key。fetch和push代码不需要输入账号和密码；如果你想要每次都输入账号密码才能进行fetch和push也可以另外进行设置。
+
+  
+
+### SSH Keys配置
+
+#### 1.检查你电脑上是否有SSH Key
+
+```
+~/.ssh` 或者用`~/.ssh ls
+```
+
+上边这行命令的作用是看电脑上有没有.ssh文件夹
+
+- 若电脑上有：显示 **bash: /C/Users/…/.ssh: Is a directory**
+- 若电脑上没有：显示 **bash: /C/Users/…/.ssh: No such file or directory**
+
+
+
+#### 2.创建SSH Key
+
+**如果电脑上有了，可以直接跳过这一步**
+
+```
+$ ssh -keygen -t rsa -c "个人邮箱"
+```
+
+
+
+##### 3次直接回车：
+
+- 回车后，第一次要求输入一个文件名，用于保存刚才生成的 SSH key 代码。可以直接回车，那么就会默认生成id_rsa和id_rsa.pub两个秘钥文件，这时候已经创建好.ssh这个文件夹；
+- 第二次要求输入密码，在使用ssh传输文件的时候，就要输入这个密码，所以不用设置直接回车；
+- 第三次要求输入确认密码
+
+##### 到此就表示公钥配置完成
+
+
+
+#### 3.
