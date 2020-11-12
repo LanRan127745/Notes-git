@@ -10,26 +10,31 @@ git init
 
 <br>
 
+
+
+
+
 ### 2.设置签名
 
-- ##### 形式
+##### 2.1 形式
 
-  - 用户名：zzw
-  - email地址：745532828@qq.com
+> 用户名：zzw
+>
+> email地址：745532828@qq.com
 
-- ##### 作用
+##### 2.2 作用
 
-  - 区分不同开发人员的身份
+​	区分不同开发人员的身份
 
-- ##### 命令
+##### 2.3 命令
 
-  - ###### 项目级别/仓库界别：仅在当前本地库范围内有效
+- ###### 项目级别/仓库界别：仅在当前本地库范围内有效
 
-    - git config user.name zzw_local
+  - git config user.name zzw_local
 
-    - git config user.email 745532828@qq.com
+  - git config user.email 745532828@qq.com
 
-    - 信息保存的位置：./.git/config文件
+  - 信息保存的位置：./.git/config文件
 
-      ![3 cat  . gi t/config  reposi toryformatve rsi on  filemode -  logallrefupdates -  1 gnorecase  name  zzw_pro  74553282B@qq.com ](Git 命令教程.assets/clip_image001.png)
+    ![3 cat  . gi t/config  reposi toryformatve rsi on  filemode -  logallrefupdates -  1 gnorecase  name  zzw_pro  74553282B@qq.com ](Git 命令教程.assets/clip_image001.png)
 
