@@ -32,5 +32,5 @@ git init
 
   ##### 信息保存的位置：./.git/config文件
 
-  ![zzw_pro 745532828@qq.com ](./图片/config.jpg)
+  ![zzw_pro 745532828@qq.com ](./img/config.jpg)
 
